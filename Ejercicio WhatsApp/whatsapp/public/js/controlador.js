@@ -121,6 +121,7 @@ $(document).ready(function() {
         dataType: "json", // como sera el tipo de dato q recibira
         success: (respuestas) => {
             //console.log(respuestas);
+            //append () - Inserta contenido al final de los elementos seleccionados
             for (let respuesta of respuestas) {
                 $("#slc-usuario").append(
                     `<option value= "${respuesta.codigo_usuario}"> ${respuesta.nombre_usuario}</option>`

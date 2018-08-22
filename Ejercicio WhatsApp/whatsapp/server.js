@@ -11,7 +11,7 @@ const conexion = mysql.createConnection({
     database: "bd_whatsapp"
 });
 
-//middleware
+//middlewares
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
